@@ -1,6 +1,6 @@
 Summary:
 
-This project aims to create an "end to end" application using Google's Gini Pro library to automatically transcribe and summarize YouTube videos.
+This project aims to create an "end to end" application using Google's gemini Pro library to transcribe and summarize YouTube videos automatically.
 
 Transcript Extraction:
 
@@ -9,8 +9,8 @@ The extracted transcript is then converted into a paragraph for further processi
 
 Summary Generation:
 
-Implements a prompt-based summarization approach using Gini Pro's "generate_content" function.
-The prompt instructs Gini Pro to summarize the transcript text into concise points within 250 words.
+Implements a prompt-based summarization approach using gemini Pro's "generate_content" function.
+The prompt instructs gemini Pro to summarize the transcript text into concise points within 250 words.
 Streamlit App:
 
 A Streamlit application is created with the following components:
