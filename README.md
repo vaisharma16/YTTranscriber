@@ -1,43 +1,51 @@
-YouTube Transcript Summarizer
+# YouTube Transcriber
 
-Summary
-YouTube Transcript Summarizer is an "end-to-end" application that utilizes Google's Gemini Pro library to transcribe and summarize YouTube videos automatically. It extracts transcripts from public YouTube videos using the YouTube Transcript API and generates concise summaries using gemini Pro's summarization capabilities.
+## Summary
 
-Features
-Transcript Extraction: Utilizes the YouTube Transcript API to extract transcripts from public YouTube videos.
-Summary Generation: Implements prompt-based summarization using gemini Pro's "generate_content" function.
-Streamlit App: Provides a Streamlit application with components for inputting YouTube video links, displaying video thumbnails, and presenting the generated summary.
+YouTube Transcriber is a Streamlit application designed to extract transcripts from YouTube videos and provide them in text format. It utilizes the YouTube Transcript API to extract transcripts from public YouTube videos based on their URLs.
 
-Usage
-Paste the YouTube video link into the input box.
-Click the "Get Detailed Notes" button.
-The app will automatically extract the transcript and generate a summary based on the given prompt.
+## Features
 
-Reference
-The original project was developed by Dendra Verma.
+- **Transcript Extraction**: Uses the YouTube Transcript API to extract transcripts from YouTube videos.
+- **Text Output**: Provides the extracted transcript in text format for further processing or analysis.
 
-Installation
+## Usage
+
+1. Paste the YouTube video link into the provided input box.
+2. Click the "Get Transcript" button to extract the transcript.
+3. The extracted transcript will be displayed in text format.
+
+## Requirements
+
+- Python 3.x
+- Streamlit
+- youtube_transcript_api
+- requests
+
+## Installation
+
 To set up the project locally, follow these steps:
 
-Clone the repository:
+1. Clone this repository:
 
-git clone https://github.com/vaisharma16/trendin.git
+   ```bash
+   git clone https://github.com/your_username/yt-transcriber.git
 
-Install dependencies:
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-pip install -r requirements.txt
+3. Set up your environment variables by creating a .env file and adding your Google API key:
+   ```bash
+   GOOGLE_API_KEY=your_api_key_here
+   
+4. Run the application:
+   ```bash
+   streamlit run yt_transcriber.py
 
-Create a .env file and add your Google API key:
+## Acknowledgments
 
-GOOGLE_API_KEY=your_api_key_here
-
-Run the Streamlit app:
-
-streamlit run app.py
-
-Acknowledgments
-
-Special thanks to Dendra Verma for the original project.
-I acknowledge that I watched Krish Naik's video to gain inspiration for this project. The video link is [here](https://www.youtube.com/watch?v=VZOnp2YpY8Q&list=PLZoTAELRMXVNbDmGZlcgCA3a8mRQp5axb&index=10&t=1s).
+1. Special thanks to Dendra Verma for the original project.
+2. I acknowledge that I watched Krish Naik's video to gain inspiration for this project. The video link is [here](https://www.youtube.com/watch?v=VZOnp2YpY8Q&list=PLZoTAELRMXVNbDmGZlcgCA3a8mRQp5axb&index=10&t=1s).
 
 This project utilizes the Google Gemini Pro library and the YouTube Transcript API.
